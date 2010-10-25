@@ -12,7 +12,7 @@ class MediciModelMedico extends JModel
 	function __construct()
 	{
 		parent::__construct();
-		$id = JRequest::getVar( 'cid', array(0), 'default', 'array' ); 
+		$id = JRequest::getVar( 'cid', 0, 'default', 'array' ); 
 		$this->setId( $id[0] );
 		
 	}
